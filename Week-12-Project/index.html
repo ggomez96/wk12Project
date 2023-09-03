@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Project:Animal Crossing Inspo</title>
+    <link ref="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container">
+
+    <!--New Town Section, adding town and resident-->
+    <form>
+        <h2>New Town</h2>
+        <div id="new-town">
+            <label for="new-town-name">Town Name: </label>
+            <input type="text" id="new-town-name" class="form-control"><br>
+        </div>
+        <div id="new-resident">
+            <label for="new-resident">Resident: </label>
+            <input type="text" id="new-resident" class="form-control"><br>
+        </div>
+
+        <button id="new-town-btn" class="btn btn-secondary form-control">Create</button>
+    </form>
+
+    <!--updating town info-->
+    <form>
+        <h4>Update Town: </h4>
+        <div>
+          <label for="updateId">Town ID:</label>
+          <input id="updateId">
+        </div>
+        <div>
+          <label for="updateTownName">Town Name:</label>
+          <input id="updateTownName">
+        </div>
+        <div>
+          <label for="updateResident">Resident:</label>
+          <input id="updateResident">
+        </div>
+        <button type="submit" id="updateBtn">Submit</button>
+      </form>
+
+
+    <table><!--displaying who is in what town in table format-->
+        <thead>
+            <th>Id -</th>
+            <th>Town -</th>
+            <th>Resident -</th>
+            <th>Remove Resident -</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+   
+
+   
+
+
+    
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
