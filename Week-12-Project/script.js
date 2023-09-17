@@ -4,7 +4,7 @@ const endPoint = 'https://localhost:3000/townRoster' /*API*/
 
 
 /*displaying the info (GET)*/
-$.get(endPoint).then(data => {/*iterating over array data, then for every town, we want to append to the table body*/
+$.get(endPoint).then(data => {/*iterating over array data with map, then for every town, we want to append to the table body*/
     data.map(town => {
         $('tbody').append(
             $(`
@@ -23,10 +23,10 @@ $.get(endPoint).then(data => {/*iterating over array data, then for every town, 
 
 
 
-/*POSTING NEW TOWN AND RESIDENT TO THE TABLE//CLICK NOT WORKING!!!*/
+/*POSTING NEW TOWN AND RESIDENT TO THE TABLE// CLICK NOT WORKING!!!*/
 $('#new-town-btn').click(function () {
 
-    $.post(endPoint, {
+    $.post(endPoint, { /* suppose to post to API*/
         townName: $('#new-town-name').val(), /*getting value from input boxes*/
         resident: $('#new-resident').val(),
     });
